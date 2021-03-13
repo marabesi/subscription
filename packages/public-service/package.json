@@ -1,0 +1,20 @@
+{
+  "name": "public-service",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/public-service.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "rimraf build/ && yarn tsc",
+    "dev": "yarn tsc -w",
+    "tsc": "tsc --outDir build/",
+    "test": "jest ./lib --colors"
+  }
+}

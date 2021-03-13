@@ -1,0 +1,14 @@
+version: "2"
+services:
+  subscription:
+    build:
+      context: ./packages/subscription-service
+    volumes:
+      - ./packages/subscription-service:/app
+    environment:
+      DATABASE_HOST: $DATABASE_HOST
+      DATABASE_TYPE: $DATABASE_TYPE
+      DATABASE_USER: $DATABASE_USER
+      DATABASE_PORT: $DATABASE_PORT
+      DATABASE_PASSWORD: $DATABASE_PASSWORD
+      DATABASE_NAME: $DATABASE_NAME
